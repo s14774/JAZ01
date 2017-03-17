@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <style>
+        td {
+            text-align: right;
+        }
+        .radio {
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+<form action="kalkulatorKredytowy" method="post">
+    <table>
+        <tr>
+            <td><label>Wnioskowana kwota kredytu: </label></td>
+            <td><input type="number" min="1" id="kwota" name="kwota"/></td>
+        </tr>
+        <tr>
+            <td><label>Ilość rat: </label></td>
+            <td><input type="number" min="1" name="raty"/></td>
+        <tr/>
+        <tr>
+            <td><label>Oprocentowanie: </label></td>
+            <td><input type="number" step="0.01" min="0" name="oprocentowanie"/></td>
+        <tr/>
+        <tr>
+            <td><label>Opłata stała: </label></td>
+            <td><input type="number" min="0" name="oplata"/></td>
+        <tr/>
+        <tr>
+            <td><label>Rodzaj rat: </label></td>
+            <td class="radio"><input type="radio" name="rodzaj" value="stale"/>Stałe</td>
+        <tr/>
+            <td></td>
+            <td class="radio"><input type="radio" name="rodzaj" value="malejace"/>Malejące</td>
+        <tr/>
+        <tr>
+            <td><input type="submit" value="wyslij"/></td>
+        <tr/>
+    </table>
+
+</form>
+
+</body>
+</html>
